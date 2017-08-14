@@ -1,8 +1,16 @@
 <h1>Homepage</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 
 <h2>Blog Posts</h2>
-<%=@posts.inspect %>
+<% @posts.each do |posts2| %>
+<p> <%= posts2.title %> </p>
+<p> <%= posts2.body %> </p>
+
+<% end %>
+
+
 
 <h2>Skills</h2>
-<%=@skills.inspect %>
+<% @skills.each do |skills2| %>
+<p> <%= skills2.title %> </p>
+<p> <%= skills2.percent_utilized %> </p>
+<% end %>
